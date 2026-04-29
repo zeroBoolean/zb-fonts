@@ -1,0 +1,25 @@
+{
+  "name": "font-cdn",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "prebuild": "node scripts/build-fonts.js",
+    "build": "next build",
+    "dev": "node scripts/build-fonts.js && next dev",
+    "start": "next start",
+    "lint": "next lint",
+    "sync": "node scripts/build-fonts.js"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "fs-extra": "^11.3.4",
+    "typescript": "^5.0.0"
+  }
+}
